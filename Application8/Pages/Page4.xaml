@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Application8_Tabs.Page4"
+             Title="Payment">
+    <VerticalStackLayout BackgroundColor="Red">
+
+        <StackLayout BackgroundColor="White" Padding="40" Margin="20">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="CardHolder Name" Grid.Row="0" />
+                <Entry x:Name="CardHolder"   Grid.Row="1"/>
+                <Label Text="Card No."  Grid.Row="2"/>
+                <Entry x:Name="CardNo"  Grid.Row="3"/>
+                <Label Text="Date"   WidthRequest="100"  Grid.Row="4" />
+                <Entry x:Name="Date"  WidthRequest="100" Grid.Row="5"/>
+                <Label Text="CVV"    WidthRequest="100" Grid.Row="4" Grid.Column="1"/>
+                <Entry x:Name="Cvv"  WidthRequest="100" Grid.Row="5" Grid.Column="1"/>
+                <RadioButton Content="Cache"  Grid.Row="6"/>
+                <RadioButton Content="Intallments"  Grid.Row="7" />
+            </Grid>
+
+            <StackLayout>
+                <ListView x:Name="Payment_List_View">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <StackLayout>
+                    <Frame BorderColor="Black"
+                   CornerRadius="10" 
+                   Padding="0"
+                   WidthRequest="200">
+
+                        <Button 
+                    x:Name="Pay"
+                FontAttributes="Bold" 
+                Text="Pay" 
+                TextColor="White" 
+                BackgroundColor="Red" 
+                WidthRequest="200"
+                 
+                    
+                    />
+
+                    </Frame>
+
+
+
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

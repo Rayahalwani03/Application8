@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Application8_Tabs.Page2"
+             Title="Store">
+    <VerticalStackLayout BackgroundColor="Red">
+
+        <StackLayout  BackgroundColor="White" Padding="40" Margin="20">
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="CPU" FontSize="Medium" Grid.Row="0" Grid.Column="0" />
+
+
+
+                <RadioButton x:Name="rb1" Content="Core i3" Grid.Row="1" Grid.Column="0"/>
+                <RadioButton x:Name="rb2" Content="Core i5" Grid.Row="2" Grid.Column="0"/>
+                <RadioButton x:Name="rb3" Content="Core i7" Grid.Row="3" Grid.Column="0"/>
+                <RadioButton x:Name="rb4" Content="Core i9" Grid.Row="4" Grid.Column="0"/>
+
+
+            </Grid>
+
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Storage" FontSize="Medium" Grid.Row="0" Grid.Column="1"/>
+                <RadioButton x:Name="rb5" Content=" SSD" Grid.Row="1" Grid.Column="1"/>
+                <RadioButton x:Name="rb6" Content=" HDD" Grid.Row="2" Grid.Column="1"/>
+
+
+            </Grid>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Monitor" FontSize="Medium" Grid.Row="0" Grid.Column="1"/>
+                <RadioButton x:Name="rb7" Content="Phillips" Grid.Row="1" Grid.Column="1"/>
+                <RadioButton x:Name="rb8" Content=" NEC" Grid.Row="2" Grid.Column="1"/>
+                <RadioButton x:Name="rb9" Content=" HP" Grid.Row="3" Grid.Column="1"/>
+
+            </Grid>
+
+
+
+
+        </StackLayout>
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
