@@ -9,8 +9,9 @@
         <StackLayout  Orientation="Vertical"
                       BackgroundColor="White"
                       Padding="40" Margin="20" >
+            
 
-            <StackLayout HorizontalOptions="Center">
+            <StackLayout WidthRequest="190" HorizontalOptions="Center">
                 <Label 
                     Text="Memory Size GB" 
                        FontAttributes="Bold" 
@@ -33,7 +34,7 @@
 
                 </StackLayout>
             </StackLayout>
-            <StackLayout HorizontalOptions="Center">
+            <StackLayout WidthRequest="170"  HorizontalOptions="Center">
                 <Label Text="Storage Size GB" 
                        FontAttributes="Bold" 
                        FontSize="20" />
@@ -57,7 +58,7 @@
                 </StackLayout>
             </StackLayout>
 
-            <StackLayout HorizontalOptions="Center">
+            <StackLayout WidthRequest="170"  HorizontalOptions="Center">
                 <Label Text="Monitor Size GB"    
                        FontAttributes="Bold" 
                        FontSize="20"/>
