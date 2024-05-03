@@ -15,19 +15,19 @@
 
         </Tab>
 
-        <Tab Title="Settings" Icon="settings.png" >
+        <Tab Title="Store" Icon="store.png" >
 
             <ShellContent  ContentTemplate="{DataTemplate local:Page2}" Route="Page2"/>
 
         </Tab>
 
-        <Tab Title="Shop" Icon="grade.png" >
+        <Tab Title="Shop" Icon="shop.png" >
 
             <ShellContent ContentTemplate="{DataTemplate local:Page3}" Route="Page3"/>
 
         </Tab>
 
-        <Tab Title="Payment" Icon="grade.png" >
+        <Tab Title="Payment" Icon="payment.png" >
 
             <ShellContent ContentTemplate="{DataTemplate local:Page4}" Route="Page3"/>
 

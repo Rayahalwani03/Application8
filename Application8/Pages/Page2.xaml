@@ -6,84 +6,65 @@
     <VerticalStackLayout BackgroundColor="Red">
 
         <StackLayout  BackgroundColor="White" Padding="40" Margin="20">
-            <Grid>
-
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <Label Text="CPU" FontSize="Medium" Grid.Row="0" Grid.Column="0" />
 
 
+            <StackLayout Orientation="Horizontal" Spacing="50" Margin="20" >
 
-                <RadioButton x:Name="rb1" Content="Core i3" Grid.Row="1" Grid.Column="0"/>
-                <RadioButton x:Name="rb2" Content="Core i5" Grid.Row="2" Grid.Column="0"/>
-                <RadioButton x:Name="rb3" Content="Core i7" Grid.Row="3" Grid.Column="0"/>
-                <RadioButton x:Name="rb4" Content="Core i9" Grid.Row="4" Grid.Column="0"/>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Start" RadioButtonGroup.GroupName="Cpu" >
+                    <Label Text="CPU" FontAttributes="Bold" FontSize="29"/>
+                    <RadioButton GroupName="Cpu"
+                                 x:Name="rdcorei3"
+                                 Content="Core i3"
+                                 Scale="1.2"/>
+                    <RadioButton GroupName="Cpu"
+                              x:Name="rdcorei5"
+                                 Content="Core i5"
+                                 Scale="1.2"/>
+                    <RadioButton GroupName="Cpu"
+                                          x:Name="rdcorei7"
+                                 Content="Core i7"
+                                 Scale="1.2"/>
+                    <RadioButton GroupName="Cpu"
+                                          x:Name="rdcorei9"
+                                 Content="Core i9"
+                                 Scale="1.2"/>
+                </StackLayout>
 
+                <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" RadioButtonGroup.GroupName="Storage" >
+                    <Label Text="Storage" FontAttributes="Bold" FontSize="29"/>
+                    <RadioButton GroupName="Storage"
+                                          x:Name="rdhdd"
+                                 Content="HDD"
+                                 Scale="1.2"/>
+                    <RadioButton GroupName="Storage"
+                                 Content="SSD"
+                             x:Name="rdssd"
+                                 Scale="1.2"/>
+                </StackLayout>
 
-            </Grid>
+            </StackLayout>
 
-
-            <Grid>
-
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <Label Text="Storage" FontSize="Medium" Grid.Row="0" Grid.Column="1"/>
-                <RadioButton x:Name="rb5" Content=" SSD" Grid.Row="1" Grid.Column="1"/>
-                <RadioButton x:Name="rb6" Content=" HDD" Grid.Row="2" Grid.Column="1"/>
-
-
-            </Grid>
-
-            <Grid>
-
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <Label Text="Monitor" FontSize="Medium" Grid.Row="0" Grid.Column="1"/>
-                <RadioButton x:Name="rb7" Content="Phillips" Grid.Row="1" Grid.Column="1"/>
-                <RadioButton x:Name="rb8" Content=" NEC" Grid.Row="2" Grid.Column="1"/>
-                <RadioButton x:Name="rb9" Content=" HP" Grid.Row="3" Grid.Column="1"/>
-
-            </Grid>
-
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" RadioButtonGroup.GroupName="Monitor" >
+                <Label Text="Monitor"
+                       FontAttributes="Bold"
+                       FontSize="29"/>
+                <RadioButton GroupName="Monitor"
+                                 Content="Phillips"
+                                 Scale="1.2"
+                                   x:Name="rdphillips"/>
+                <RadioButton GroupName="Monitor"
+                                 Content="NEC"
+                                 Scale="1.2"
+                                x:Name="rdnec"/>
+                <RadioButton GroupName="Monitor"
+                                 Content="HP"
+                                    x:Name="rdhp"
+                                 Scale="1.2"/>
+            </StackLayout>
 
 
 
         </StackLayout>
-
-
-
-
 
     </VerticalStackLayout>
 </ContentPage>

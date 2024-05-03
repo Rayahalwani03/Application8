@@ -4,11 +4,8 @@
              x:Class="Application8_Tabs.Page4"
              Title="Payment">
     <VerticalStackLayout BackgroundColor="Red">
-
         <StackLayout BackgroundColor="White" Padding="40" Margin="20">
-
             <Grid>
-
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -25,16 +22,36 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="CardHolder Name" Grid.Row="0" />
-                <Entry x:Name="CardHolder"   Grid.Row="1"/>
-                <Label Text="Card No."  Grid.Row="2"/>
-                <Entry x:Name="CardNo"  Grid.Row="3"/>
-                <Label Text="Date"   WidthRequest="100"  Grid.Row="4" />
-                <Entry x:Name="Date"  WidthRequest="100" Grid.Row="5"/>
-                <Label Text="CVV"    WidthRequest="100" Grid.Row="4" Grid.Column="1"/>
-                <Entry x:Name="Cvv"  WidthRequest="100" Grid.Row="5" Grid.Column="1"/>
-                <RadioButton Content="Cache"  Grid.Row="6"/>
-                <RadioButton Content="Intallments"  Grid.Row="7" />
+                <Label Text="CardHolder Name"
+                       Grid.Row="0"/>
+                <Entry x:Name="CardHolder"  
+                       Grid.Row="1"/>
+                <Label Text="Card No." 
+                       Grid.Row="2"/>
+                <Entry x:Name="CardNo" 
+                       MaxLength="16"
+                       Keyboard="Numeric" 
+                       Grid.Row="3" />
+                <Label Text="Date"  
+                       WidthRequest="100"
+                       Grid.Row="4" />
+                <DatePicker x:Name="Date"
+                            WidthRequest="100" 
+                            Grid.Row="5"/>
+                <Label Text="CVV"    
+                       WidthRequest="100"
+                       Grid.Row="4" 
+                       Grid.Column="1"/>
+                <Entry x:Name="Cvv"
+                       Keyboard="Numeric" 
+                       MaxLength="3" 
+                       WidthRequest="100"
+                       Grid.Row="5" 
+                       Grid.Column="1" />
+                <RadioButton Content="Cache"  
+                             Grid.Row="6"/>
+                <RadioButton Content="Intallments" 
+                             Grid.Row="7" />
             </Grid>
 
             <StackLayout>
@@ -51,32 +68,19 @@
                 </ListView>
 
                 <StackLayout>
-                    <Frame BorderColor="Black"
-                   CornerRadius="10" 
-                   Padding="0"
-                   WidthRequest="200">
-
-                        <Button 
-                    x:Name="Pay"
-                FontAttributes="Bold" 
-                Text="Pay" 
-                TextColor="White" 
-                BackgroundColor="Red" 
-                WidthRequest="200"
-                 
-                    
-                    />
-
-                    </Frame>
-
-
-
+                    <Button 
+                              x:Name="Pay"
+                            FontAttributes="Bold" 
+                            Text="Pay" 
+                            TextColor="White" 
+                            BackgroundColor="Red" 
+                            WidthRequest="200"
+                            BorderColor="Black"
+                            BorderWidth="0.6"
+                            CornerRadius="15"/>
                 </StackLayout>
 
             </StackLayout>
         </StackLayout>
-
-
-
     </VerticalStackLayout>
 </ContentPage>
