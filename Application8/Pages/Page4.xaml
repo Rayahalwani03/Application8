@@ -49,26 +49,19 @@
                        Grid.Row="5" 
                        Grid.Column="1" />
                 <RadioButton Content="Cache"  
-                             Grid.Row="6"/>
+                             Grid.Row="6"
+                             x:Name="cache"
+                             />
                 <RadioButton Content="Intallments" 
-                             Grid.Row="7" />
+                             Grid.Row="7" 
+                             x:Name="intallments"
+                             />
             </Grid>
 
-            <StackLayout>
-                <ListView x:Name="Payment_List_View">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout>
+        </StackLayout>
 
-                                </StackLayout>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-
-                <StackLayout>
-                    <Button 
+        <StackLayout>
+            <Button 
                               x:Name="Pay"
                             FontAttributes="Bold" 
                             Text="Pay" 
@@ -77,10 +70,10 @@
                             WidthRequest="200"
                             BorderColor="Black"
                             BorderWidth="0.6"
-                            CornerRadius="15"/>
-                </StackLayout>
-
-            </StackLayout>
+                            CornerRadius="15"
+                
+                
+                />
         </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
