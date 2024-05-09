@@ -5,50 +5,58 @@
              Title="Shop">
 
     <VerticalStackLayout BackgroundColor="Red">
-
         <StackLayout  Orientation="Vertical"
                       BackgroundColor="White"
                       Padding="40" Margin="20" >
-            
 
-            <StackLayout WidthRequest="190" HorizontalOptions="Center">
+            <StackLayout WidthRequest="190" 
+                         HorizontalOptions="Center">
+
                 <Label 
                     Text="Memory Size GB" 
                        FontAttributes="Bold" 
                     FontSize="20"/>
+
                 <StackLayout  
                     HorizontalOptions="Center" 
-                    Orientation="Horizontal"  >
+                    Orientation="Horizontal">
+
                     <Button Text="-" 
                             FontSize="20" 
                             x:Name="Button1_minus"
                             WidthRequest="40"
                             HeightRequest="40"/>
+
                     <Entry IsEnabled="False" />
+
                     <Button Text="+" 
                             FontSize="20" 
                             x:Name="Button1_plus"
                             WidthRequest="40"
-                            HeightRequest="40"
-                            />
+                            HeightRequest="40"/>
 
                 </StackLayout>
             </StackLayout>
-            <StackLayout WidthRequest="170"  HorizontalOptions="Center">
+
+            <StackLayout WidthRequest="170" 
+                         HorizontalOptions="Center">
+
                 <Label Text="Storage Size GB" 
                        FontAttributes="Bold" 
                        FontSize="20" />
+
                 <StackLayout  
                     HorizontalOptions="Center" 
                     Orientation="Horizontal">
+
                     <Button Text="-"   
                             FontSize="20" 
                             x:Name="Button2_minus" 
                             WidthRequest="40"
                             HeightRequest="40"/>
-                    
+
                     <Entry IsEnabled="False" />
-                    
+
                     <Button Text="+" 
                              FontSize="20"
                             x:Name="Button2_plus" 
@@ -58,20 +66,25 @@
                 </StackLayout>
             </StackLayout>
 
-            <StackLayout WidthRequest="170"  HorizontalOptions="Center">
+            <StackLayout WidthRequest="170" 
+                         HorizontalOptions="Center">
+
                 <Label Text="Monitor Size GB"    
                        FontAttributes="Bold" 
                        FontSize="20"/>
+
                 <StackLayout
                     HorizontalOptions="Center" 
                     Orientation="Horizontal">
+
                     <Button Text="-" 
                             FontSize="20"
                             x:Name="Button3_minus" 
                             WidthRequest="40"
-                            HeightRequest="40"
-                            />
+                            HeightRequest="40"/>
+
                     <Entry  IsEnabled="False" />
+
                     <Button Text="+"
                             FontSize="20"
                             x:Name="Button3_plus" 
@@ -80,9 +93,7 @@
 
                 </StackLayout>
             </StackLayout>
-
         </StackLayout>
-
     </VerticalStackLayout>
 
 </ContentPage>

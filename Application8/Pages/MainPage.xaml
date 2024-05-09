@@ -5,33 +5,32 @@
              Title="Home">
 
     <VerticalStackLayout BackgroundColor="Red">
-            <Grid>
-
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="100"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
                 <RowDefinition Height="150"/>
                 <RowDefinition Height="100"/>
-                </Grid.RowDefinitions>
+            </Grid.RowDefinitions>
 
-                <Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="90"/>
                 <ColumnDefinition Width="250"/>
                 <ColumnDefinition Width="100"/>
-                </Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
             <Border 
                 WidthRequest="240"
                 HeightRequest="40"
                 Stroke="AliceBlue"
-                      Grid.Row="2"
-                    Grid.Column="1">
+                Grid.Row="2"
+                Grid.Column="1">
 
                 <Label
                     Text="ONLINE COMPUTER STORE"
                     TextColor="White"
                     FontSize="Medium"
                     FontAttributes="Italic"/>
+                
             </Border>
         </Grid>
-        
     </VerticalStackLayout>
 </ContentPage>
