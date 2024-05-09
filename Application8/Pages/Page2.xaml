@@ -8,24 +8,23 @@
         <StackLayout  BackgroundColor="White" Padding="40" Margin="20">
 
 
-            <StackLayout Orientation="Horizontal" Spacing="50" Margin="20" >
 
                 <StackLayout Orientation="Vertical" HorizontalOptions="Start" RadioButtonGroup.GroupName="Cpu" >
                     <Label Text="CPU" FontAttributes="Bold" FontSize="29"/>
                     <RadioButton GroupName="Cpu"
-                                 x:Name="rdcorei3"
+                                 x:Name="rbcorei3"
                                  Content="Core i3"
                                  Scale="1.2"/>
                     <RadioButton GroupName="Cpu"
-                              x:Name="rdcorei5"
+                              x:Name="rbcorei5"
                                  Content="Core i5"
                                  Scale="1.2"/>
                     <RadioButton GroupName="Cpu"
-                                          x:Name="rdcorei7"
+                                 x:Name="rbcorei7"
                                  Content="Core i7"
                                  Scale="1.2"/>
                     <RadioButton GroupName="Cpu"
-                                          x:Name="rdcorei9"
+                                 x:Name="rbcorei9"
                                  Content="Core i9"
                                  Scale="1.2"/>
                 </StackLayout>
@@ -33,12 +32,12 @@
                 <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" RadioButtonGroup.GroupName="Storage" >
                     <Label Text="Storage" FontAttributes="Bold" FontSize="29"/>
                     <RadioButton GroupName="Storage"
-                                          x:Name="rdhdd"
+                               x:Name="rbhdd"
                                  Content="HDD"
                                  Scale="1.2"/>
                     <RadioButton GroupName="Storage"
                                  Content="SSD"
-                             x:Name="rdssd"
+                               x:Name="rbssd"
                                  Scale="1.2"/>
                 </StackLayout>
 
@@ -51,20 +50,18 @@
                 <RadioButton GroupName="Monitor"
                                  Content="Phillips"
                                  Scale="1.2"
-                                   x:Name="rdphillips"/>
+                                   x:Name="rbphillips"/>
                 <RadioButton GroupName="Monitor"
                                  Content="NEC"
                                  Scale="1.2"
-                                x:Name="rdnec"/>
+                                x:Name="rbnec"/>
                 <RadioButton GroupName="Monitor"
                                  Content="HP"
-                                    x:Name="rdhp"
+                                   x:Name="rbhp"
                                  Scale="1.2"/>
             </StackLayout>
 
 
-
-        </StackLayout>
 
     </VerticalStackLayout>
 </ContentPage>
